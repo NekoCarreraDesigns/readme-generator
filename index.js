@@ -1,6 +1,6 @@
 const fs = require("fs");
 const inquirer = require("inquirer");
-let generateMarkdown = require("generateMarkdown")
+let generateMarkdown = require("./utils/generateMarkdown")
 
 
 inquirer.prompt([{
@@ -34,11 +34,11 @@ inquirer.prompt([{
     type: "checkbox",
     name: "licenses",
     message: "What type of license will you be using?",
-    choices: [
+    choices: [//"MIT", "Apache", "GNU", "MPL"
         {
             key: "MIT",
-            name: "MIT License",
-            url: "https://api.github.com/licenses/mit",
+            name: "MIT",
+            url: "https://api.github.com/licenses/mit"
 
         },
         {
