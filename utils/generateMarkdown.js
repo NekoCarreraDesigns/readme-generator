@@ -8,9 +8,9 @@ function generateMarkdown(data) {
   
   # Usage: ${data.usage}
 
-  # License ${data.licenses}
+  # License: ${data.licenses}
 
-  # Contributors ${data.contributions}
+  # Contributors: ${data.contributions}
   
   `;
 }
