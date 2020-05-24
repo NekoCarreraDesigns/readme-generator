@@ -1,11 +1,11 @@
 const fs = require("fs");
 const inquirer = require("inquirer");
-const dotenv = require("dotenv");
+
 
 inquirer.prompt([{
     type: "input",
     name: "name",
-    message: "What is your username?"
+    message: "What is your Github username?"
 
 },
 {
@@ -34,18 +34,44 @@ inquirer.prompt([{
     name: "licenses",
     message: "What type of license will you be using?",
     choices: [
-        "MIT",
-        "Apache",
-        "GNU",
-        "BSD"
+        {
+            key: "MIT",
+            name: "MIT License",
+            url: "https://api.github.com/licenses/mit",
+
+        },
+        {
+            key: "Apache",
+            name: "Apache License 2.0",
+            url: "https://api.github.com/licenses/apache-2.0"
+
+        },
+        {
+            key: "MPL-2.0",
+            name: "Mozilla Public License",
+            url: "https://api.github.com/licenses/mpl-2.0"
+        },
+        {
+            key: "GPL-3.0",
+            name: "GNU General Pubic License v3.0",
+            url: "https://api.github.com/licenses/gpl-3.0"
+        },
     ]
-
-
+},
+{
+    type: "input",
+    name: "contributions",
+    message: "How does someone contribute to the project?"
+},
+{
+    type: "input",
+    name: "tests",
+    message: "Are there tests to perform?"
 },
 ])
 
 
-const questions = []
+
 
 function writeToFile() {
 
