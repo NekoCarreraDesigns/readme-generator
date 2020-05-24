@@ -1,5 +1,6 @@
 const fs = require("fs");
 const inquirer = require("inquirer");
+let generateMarkdown = require("generateMarkdown")
 
 
 inquirer.prompt([{
@@ -60,17 +61,30 @@ inquirer.prompt([{
 },
 {
     type: "input",
+    name: "installation",
+    message: "Are there any keys for installation?"
+},
+{
+    type: "input",
     name: "contributions",
-    message: "How does someone contribute to the project?"
+    message: "Who is contributing to the project?"
 },
 {
     type: "input",
     name: "tests",
     message: "Are there tests to perform?"
 },
-])
+]).then(function (data) {
+
+    fs.writeFile("README.md", generateMarkdown(data), function (err) {
+        if (err) {
+            console.log(err);
+        }
+
+    });
 
 
+});
 
 
 function writeToFile() {
