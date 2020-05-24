@@ -5,10 +5,10 @@
 
   # Contents: none
   
-  # Usage: generating readme files using the command line 
+  # Usage: Generating readme files from the command line for future projects
 
-  # License MIT
+  # License: MIT
 
-  # Contributors so far it's just me
+  # Contributors: So far only me
   
   
