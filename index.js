@@ -76,7 +76,7 @@ inquirer.prompt([{
 },
 ]).then(function (data) {
 
-    fs.writeFile("README.md", generateMarkdown(data), function (err) {
+    fs.writeFile("README.md", generateMarkdown(data), "utf8", function (err) {
         if (err) {
             console.log(err);
         }
