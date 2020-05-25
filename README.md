@@ -1,14 +1,16 @@
 
   # Title: Readme Generator
   
-  # Description: A command line readme generator using node.js
+  # Description: Generating a readme file from the command line
 
-  # Contents: none
+  # Contents: no
   
-  # Usage: Generating readme files from the command line for future projects
+  # Usage: generating a readme file using node.js
 
   # License: MIT
 
-  # Contributors: So far only me
+  # Contributors: nobody yet
+  
+  # Installation: $ {data.installation}
   
   
