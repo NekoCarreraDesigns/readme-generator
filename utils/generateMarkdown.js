@@ -12,6 +12,8 @@ function generateMarkdown(data) {
 
   # Contributors: ${data.contributions}
   
+  # Installation: $ {data.installation}
+  
   `;
 }
 
