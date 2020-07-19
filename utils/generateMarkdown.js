@@ -3,7 +3,7 @@ const writeToFile = require("wrtite-to-file");
 const generateCredits = require("./credits.js")
 
 function generateMarkdown(data) {
-  let credits = data.props;
+  let credits = data.credits;
   let links = generateCredits(credits);
   return `
   # Title: ${data.title}
