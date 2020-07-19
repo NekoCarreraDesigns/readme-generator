@@ -27,8 +27,6 @@ function generateCredits(credits) {
             );
         } else if (credit === "mysql") {
             renderCredits.push(`* [MySQL](https://www.npmjs.com/package/mysql)`);
-        } else if (credit === "chalk") {
-            renderCredits.push(`* [Chalk](https://www.npmjs.com/package/chalk)`);
         } else if (credit === "fs") {
             renderCredits.push(
                 `* [file-system](https://www.npmjs.com/package/file-system)`

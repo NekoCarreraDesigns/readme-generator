@@ -1,5 +1,3 @@
-const axios = require("axios");
-const writeToFile = require("wrtite-to-file");
 const generateCredits = require("./credits.js")
 
 function generateMarkdown(data) {
