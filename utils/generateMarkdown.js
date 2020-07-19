@@ -1,19 +1,61 @@
+const axios = require("axios");
+const writeToFile = require("wrtite-to-file");
+const generateCredits = require("./credits.js")
+
 function generateMarkdown(data) {
+  let credits = data.props;
+  let links = generateCredits(credits);
   return `
   # Title: ${data.title}
-  
-  # Description: ${data.description}
 
-  # Contents: ${data.contents}
-  
-  # Usage: ${data.usage}
+  ![last commit](https://img.shields.io/github/last-commit/${data.username}/${data.repo}?style=flat-square)![license badge](https://img.shields.io/github/license/${data.username}/${data.repo}?style=flat-square)
 
-  # License: ${data.licenses}
+  ### URL: ${data.url}
 
-  # Contributors: ${data.contributions}
+  ## Description 
   
-  # Installation: ${data.installation}
+  ${data.description}
+
+  ## Table of Contents 
+   
+  * [Installation](#installation)
+  * [Usage](#usage)
+  * [Future Developments](#future-developments)
+  * [Credits](#credits)
+  * [Questions](#questions)
+  * []
   
+  ## Installation 
+  \`\`\
+  ${data.installation}
+  \`\`\
+  
+  ## Usage 
+  
+  ${data.usage}
+
+  ## Future Developments
+
+  ${data.future - developments}
+
+  ## Credits
+
+  ${links}
+
+  ## Contributors: ${data.contributions}
+
+  ## Questions?
+
+  Contact me at  [${data.email}](mailto:${data.email}]
+  
+  or [![Follow on Github](https://img.shields.io/github/followers/${data.username}?label=Follow&style=social)](http://www.github.com/${data.username})
+
+  Copyright © 2020 [${data.name}](http://www.github.com/${data.username})
+
+  ---
+
+  ##### _Created with [NekoCarreraDesigns readme generator](https://github.com/NekoCarreraDesigns/readme-generator)
+
   `;
 }
 
