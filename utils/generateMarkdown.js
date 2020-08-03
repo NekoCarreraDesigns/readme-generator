@@ -34,7 +34,7 @@ function generateMarkdown(data) {
 
   ## Future Developments
 
-  ${data.future - developments}
+  ${data.futureDevelopments}
 
   ## Credits
 
