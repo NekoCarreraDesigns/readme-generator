@@ -34,25 +34,27 @@ function generateMarkdown(data) {
 
   ## Future Developments
 
-  ${data.futureDevelopments}
+  ${data.FutureDevelopments}
 
   ## Credits
 
   ${links}
 
-  ## Contributors: ${data.contributions}
+  ## Contributors: 
+  
+  ${data.contributors}
 
   ## Questions?
 
   Contact me at  [${data.email}](mailto:${data.email}]
   
-  or [![Follow on Github](https://img.shields.io/github/followers/${data.username}?label=Follow&style=social)](http://www.github.com/${data.username})
+  or Follow on Github https://img.shields.io/github/followers/${data.username}?label=Follow&style=social http://www.github.com/${data.username}
 
-  Copyright © 2020 [${data.name}(http://www.github.com/${data.username})]
+  Copyright © 2020 ${data.name}http://www.github.com/${data.username}
 
   ---
 
-  ##### _Created with [NekoCarreraDesigns readme generator](https://github.com/NekoCarreraDesigns/readme-generator)
+  ##### _Created with NekoCarreraDesigns readme generator https://github.com/NekoCarreraDesigns/readme-generator
 
   `;
 }
