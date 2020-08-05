@@ -7,7 +7,7 @@
 
   ## Description 
   
-  CLI readme generator taht use node.js
+  CLI readme generator that uses node.js
 
   ## Table of Contents 
    
