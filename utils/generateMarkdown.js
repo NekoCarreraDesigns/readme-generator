@@ -47,7 +47,7 @@ function generateMarkdown(data) {
 
   Contact me at  [${data.email}]
   
-  or Follow on Github (https://img.shields.io/github/followers/${data.username}?label=Follow&style=social)](http://www.github.com/${data.username})
+  or[![Follow on Github] (https://img.shields.io/github/followers/${data.username}?label=Follow&style=social)](http://www.github.com/${data.username})
 
   Copyright © 2020 ${data.name} (http://www.github.com/${data.username})
 
