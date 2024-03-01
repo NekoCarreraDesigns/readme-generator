@@ -6,7 +6,7 @@ function generateMarkdown(data) {
   return `
   # Title: ${data.title}
 
-  ![last commit](https://img.shields.io/github/last-commit/${data.username}/${data.repo}?style=flat-square)![license badge](https://img.shields.io/github/license/${data.username}/${data.repo}?style=flat-square)
+  ![last commit](https://img.shields.io/github/last-commit/${data.username}/${data.repo}?style=flat-square) ![license badge](https://img.shields.io/github/license/${data.username}/${data.repo}?style=flat-square)
 
   ### URL: ${data.url}
 
@@ -45,15 +45,15 @@ function generateMarkdown(data) {
 
   ## Questions?
 
-  Contact me at  [${data.email}]
+  Contact me at [${data.email}]
   
-  or[![Follow on Github] (https://img.shields.io/github/followers/${data.username}?label=Follow&style=social)](http://www.github.com/${data.username})
+  or [![Follow on Github](https://img.shields.io/github/followers/${data.username}?label=Follow&style=social)](http://www.github.com/${data.username})
 
-  Copyright © 2020 ${data.name} (http://www.github.com/${data.username})
+  Copyright © 2024 ${data.name} (http://www.github.com/${data.username})
 
   ---
 
-  ##### _Created with [NekoCarreraDesigns readme generator] (https://github.com/NekoCarreraDesigns/readme-generator)
+  ##### _Created with [NekoCarreraDesigns readme generator](https://github.com/NekoCarreraDesigns/readme-generator)
 
   `;
 }
